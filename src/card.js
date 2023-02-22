@@ -1,10 +1,12 @@
 import React from 'react';
 import Data from './cardData' ;
+import { useState } from 'react';
 import "./index.css"
 
 const Card= ()=> {
     // <!-- Button trigger modal -->
-
+    const [name, setName] = useState("");
+  
   return (
     
     <div className="wrap">
@@ -29,7 +31,11 @@ const Card= ()=> {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="https://formsubmit.co/daskumarbiman2020@gmail.com" method="post" class="contact-form">
+      <form action="https://formsubmit.co/sanjoys014@gmail.com" method="post" class="contact-form">
+      <div class="form-group">
+    <label for="name">Exam Name:</label>
+    <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+  </div>
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"  required/>
@@ -83,7 +89,7 @@ const Card= ()=> {
             <p class="card-text"><span className='cardUtill'>Date :</span> {e.date}</p>
             <p class="card-text"><span className='cardUtill'>Last date of joining :</span> {e.lastDate}</p>
 
-           <div className="center"  style={{display:'flex', width:"100%",justifyContent:"center",alignItems:'center'}}> <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal">Enroll</a></div>
+           <div className="center"  style={{display:'flex', width:"100%",justifyContent:"center",alignItems:'center'}}> <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) => setName(e.name)}>Enroll</a></div>
         </div>
     </div>
     </div>

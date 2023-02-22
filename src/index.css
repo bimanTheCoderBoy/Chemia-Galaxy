@@ -17,7 +17,7 @@ code {
   font-weight: bold;
 }
 .onlyMobile{position: relative;
-  left: -10px;
+  left: -16px;
   display: none;
   /* visibility: hidden; */
 }
