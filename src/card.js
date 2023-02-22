@@ -8,15 +8,18 @@ const Card= ()=> {
   return (
     
     <div className="wrap">
-<div className="row">
+    <div className='container'>
+
+   
+<div className="mt-3 row onlyMobile">
     <div className="col-6">
         <img src="img/d2.png" alt=""  height="200px" width="200px"  />
     </div>
     <div className="col-6">
-        <img src="img/d1.png" alt="" height="200px" width="200px" />
+        <img src="img/d1.png" alt="" height="180px" width="180px" />
     </div>
 </div>
-
+ </div>
 {/* <!-- Modal --> */}
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -29,13 +32,13 @@ const Card= ()=> {
       <form action="https://formsubmit.co/daskumarbiman2020@gmail.com" method="post" class="contact-form">
   <div class="form-group">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required/>
+    <input type="text" id="name" name="name"  required/>
   </div>
   
-  <div class="form-group">
+  {/* <div class="form-group">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required/>
-  </div>
+  </div> */}
   <div class="form-group">
     <label for="phone">Phone:</label>
     <input type="tel" id="number" name="number" required/>
