@@ -16,7 +16,8 @@ code {
   color: rgba(0, 0, 0, 0.806);
   font-weight: bold;
 }
-.onlyMobile{
+.onlyMobile{position: relative;
+  left: -10px;
   display: none;
   /* visibility: hidden; */
 }
