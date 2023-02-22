@@ -70,7 +70,7 @@ const Card= ()=> {
     </div>
   </div>
 </div>
-    <div class="one">
+    <div class="one" id='exams'>
   <h1>Exams</h1>
 </div>
     <div className='container-fluid'>

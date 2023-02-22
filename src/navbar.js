@@ -3,7 +3,7 @@ import "./index.css"
 const Navbar= () =>{
   return (
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary " style={{boxShadow:"0 0 10px grey"}}>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary " style={{boxShadow:"0 0 10px grey"}}>
     <div class="container-fluid " >
       <a class="navbar-brand" href="#">
       <div >
@@ -17,11 +17,11 @@ const Navbar= () =>{
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto" >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#exams">Exams</a>
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
          
         </ul>
