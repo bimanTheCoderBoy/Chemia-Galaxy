@@ -11,7 +11,7 @@ const  About=()=> {
     
     <div className="col-12 col-md-6 mb-3" style={{backgroundColor:"rgba(0,0,0,.1)",borderRadius:"7px"}} >
     Chemia Galaxy is a offline tution platform for chemistry for class 11,12.
-    classes specially for NEET and JEE are also be taught here.Our location is college para raiganj, Uttar Dinajpur
+    Classes specially for NEET and JEE are also be taught here.Our location is college para raiganj, Uttar Dinajpur
     
     </div>
     <div className="col col-md-6 mb-3" style={{borderRadius:"7px"}}>
