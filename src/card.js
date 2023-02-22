@@ -57,14 +57,14 @@ const Card= ()=> {
     <div class="one">
   <h1>Exams</h1>
 </div>
-    <div className='container-fluid row'>
+    <div className='container-fluid'>
   
-   
+   <div className="row">
     {
    Data.map((e)=>(
     <div className="col-md-3">
     <div className="wrap" style={{display:'flex', width:"100%",justifyContent:"center",alignItems:'center'}}>
-    <div class="card mt-5" style={{width: "18rem" ,boxShadow:"0 0  20px rgba(0,0,0,.3)"}}>
+    <div class="card  mt-5 ms-0 me-0" style={{width: "18rem" ,boxShadow:"0 0  20px rgba(0,0,0,.3)"}}>
         <img src="https://img.freepik.com/free-vector/science-lab-with-elements_23-2148496412.jpg" class="card-img-top" alt="..." />
         <div class="card-body">
             <h5 class="card-title"><span className='cardUtill'>Name :</span> {e.name}</h5>
@@ -81,6 +81,7 @@ const Card= ()=> {
    ))
 
     }
+    </div>
     </div>
     </div>
   )
