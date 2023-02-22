@@ -5,6 +5,7 @@ import App from './App';
 import Navbar from './navbar';
 import Footer from './footer';
 import Card from './card';
+import About from './about';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <div>
     <Navbar/>
   <Card/>
+  <About/>
     <Footer/>
     </div>
     
