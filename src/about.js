@@ -2,7 +2,7 @@ import React from 'react'
 import "./index.css"
 const  About=()=> {
   return (
-    <div className='m-2 ' id='about' style={{boxShadow:"0 0 10px rgba(0,0,0,.2)",borderRadius:"7px",display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>
+    <div className='m-2 mt-5' id='about' style={{boxShadow:"0 0 10px rgba(0,0,0,.2)",borderRadius:"7px",display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>
          <div class="one mt-2">
   <h1>About</h1>
 </div>

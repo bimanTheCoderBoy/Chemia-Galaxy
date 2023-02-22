@@ -103,7 +103,7 @@ const Card= ()=> {
             <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) => setName(e.name)}>Enroll</a>
             </div>
             <div >
-            <a href="whatsapp://send?text=Hi, I am interested about Chemia Galaxy&phone=+919593610777" ><span className={Style.icon}style={{fontSize:"2.5rem"}}><IoLogoWhatsapp/></span></a>
+            <a href={`whatsapp://send?text=Hi, I am interested about the exam [${e.name}]&phone=+919593610777`} ><span className={Style.icon}style={{fontSize:"2.5rem"}}><IoLogoWhatsapp/></span></a>
             <a href="whatsapp://send?text=https://chemiagalaxy.netlify.app/" 		data-action="share/whatsapp/share"
 		target="_blank" style={{fontSize:"2.5rem",marginLeft:"2rem"}}><FaShare/>  </a> 
         </div>
