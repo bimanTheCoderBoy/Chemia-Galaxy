@@ -8,7 +8,14 @@ const Card= ()=> {
   return (
     
     <div className="wrap">
-
+<div className="row">
+    <div className="col-6">
+        <img src="img/d2.png" alt=""  height="200px" width="200px"  />
+    </div>
+    <div className="col-6">
+        <img src="img/d1.png" alt="" height="200px" width="200px" />
+    </div>
+</div>
 
 {/* <!-- Modal --> */}
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -19,7 +26,7 @@ const Card= ()=> {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="#" method="post" class="contact-form">
+      <form action="https://formsubmit.co/daskumarbiman2020@gmail.com" method="post" class="contact-form">
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required/>
