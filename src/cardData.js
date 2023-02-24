@@ -29,7 +29,7 @@ const Data=[
     prize1:"1000/- + class xii Chemistry text book",
     prize2:"700/- + class xii question bank",
     prize3:"500/- + class xii last year Test paper",
-    sprice:"100/- Rs prize for the candidates, who will get 75% and above",
+    sprice:"100/- Rs prize for the candidates, who will get 70% and above",
     description:"Candidates should get first three place with at least 80% or above marks.The names of those who will receive the scholarship will be announced on 7th march and will be paid into their bank account on that day.",
     lastDate:"03/03/2023"
 

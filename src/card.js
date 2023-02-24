@@ -10,6 +10,12 @@ const Card= ()=> {
     // <!-- Button trigger modal -->
     const [name, setName] = useState("");
     const [clas, setClas] = useState("");
+    const [email,setEmail] =useState("sanjoys014@gmail.com");
+   function validNumber(number) {
+    if (number.length()!=10) {
+      
+    }
+   }
   
   return (
     
@@ -35,7 +41,7 @@ const Card= ()=> {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="https://formsubmit.co/sanjoys014@gmail.com" method="post" class="contact-form">
+      <form action={`https://formsubmit.co/${email}`} method="post" class="contact-form">
       <div class="form-group">
     <label for="name">Exam Name:</label>
     <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
@@ -44,7 +50,7 @@ const Card= ()=> {
     <label for="class">Class:</label>
     <input type="text" id="class" name="name" value={clas} onChange={(e) => setClas(e.target.value)} required/>
   </div>
-  
+ 
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"  required/>
@@ -56,7 +62,7 @@ const Card= ()=> {
   </div> */}
   <div class="form-group">
     <label for="phone">Phone:</label>
-    <input type="tel" id="number" name="number" required/>
+    <input type="tel" pattern="[6789][0-9]{9}" id="number" name="number" required/>
   </div>
   <div class="form-group">
     <label for="school">School:</label>
@@ -108,7 +114,17 @@ const Card= ()=> {
 
          <div style={{width:"100%",display:"flex",justifyContent: "space-between"}}>
          <div style={{paddingTop:"1rem"}}>
-            <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) =>{ setName(e.name);setClas(e.class)}}>Enroll</a>
+            <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) =>{ 
+              setName(e.name);
+              setClas(e.class);
+            if(e.class=="XII"){
+              
+              setEmail("sanjoys014@gmail.com");
+              console.log("XII");
+            }else{
+              setEmail("chemiagalaxy2023@gmail.com");
+              console.log("XI");
+            }}}>Enroll</a>
             </div>
             <div >
             <a href={`whatsapp://send?text=Hi, I am interested about the exam [${e.name}]&phone=+919593610777`} ><span className={Style.icon}style={{fontSize:"2.5rem"}}><IoLogoWhatsapp/></span></a>
