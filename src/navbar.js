@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.css"
+import { HashLink as Link } from 'react-router-hash-link';
 const Navbar= () =>{
   return (
     
@@ -17,11 +18,17 @@ const Navbar= () =>{
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto" >
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#exams">Exams</a>
+          <Link to="/#exams" class="nav-link active">Exams</Link>
+            
           </li>
          
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+          <Link to="/#about" class="nav-link">About</Link>
+           
+          </li>
+          <li class="nav-item">
+          <Link to="/procedure" class="nav-link">procedure</Link>
+            
           </li>
          
         </ul>

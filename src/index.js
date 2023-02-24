@@ -6,17 +6,39 @@ import Navbar from './navbar';
 import Footer from './footer';
 import Card from './card';
 import About from './about';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Procedure from './procedure';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <div>
+    <Router>
     <Navbar/>
-  <Card/>
+      <Switch>
+        <Route path="/procedure">
+          <Procedure />
+        </Route>
+        
+        <Route path="/">
+        <Card/>
   <About/>
-    <Footer/>
-    </div>
+        </Route>
+
+      </Switch>
+      <Footer/>
+    </Router>
+
+    
+  
+ 
+   
+   
     
   </React.StrictMode>
 );
