@@ -87,7 +87,9 @@ const Card= ()=> {
         <img src={e.img} class="card-img-top" alt="..." />
         <div class="card-body">
             <h5 class="card-title"><span className='cardUtill'>Name :</span> {e.name}</h5>
+            <p class="card-text"><span className='cardUtill'>Class :</span> {e.class}</p>
             <p class="card-text"><span className='cardUtill'>Sllybus :</span> {e.sllybus}</p>
+            <p class="card-text"><span className='cardUtill'>Full Mark :</span> {e.fullmark}</p>
             <p class="card-text"><span className='cardUtill'>Fee :</span> {e.fee}</p>
             <p class="card-text"><span className='cardUtill'>Duration :</span> {e.duration}</p>
             <p class="card-text"><span className='cardUtill'>Date :</span> {e.date}</p>
