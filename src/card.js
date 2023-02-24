@@ -63,7 +63,7 @@ const Card= ()=> {
   </div>
   
   <div class="form-group" style={{display:'flex', width:"100%",justifyContent:"center",alignItems:'center'}}>
-    <button type="submit" class="btn-submit">Send</button>
+    <button type="submit" class="btn-submit">Join Exam</button>
   </div>
 
       
