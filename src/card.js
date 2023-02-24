@@ -97,7 +97,7 @@ const Card= ()=> {
             <p class="card-text"><span className='cardUtill'>Sllybus :</span> {e.sllybus}</p>
             <p class="card-text"><span className='cardUtill'>Full Mark :</span> {e.fullmark}</p>
             <p class="card-text"><span className='cardUtill'>Fee :</span> {e.fee}</p>
-            <p class="card-text"><span className='cardUtill'>Duration :</span> {e.duration}</p>
+            <p class="card-text"><span className='cardUtill'>Time :</span> {e.duration}</p>
             <p class="card-text"><span className='cardUtill'>Date :</span> {e.date}</p>
             <p class="card-text"><span className='cardUtill'>Last date of joining :</span> {e.lastDate}</p>
             <p class="card-text"><span className='cardUtill'>1ST Prize :</span> {e.prize1}</p>
