@@ -9,6 +9,7 @@ import Style from "./Footer.module.css"
 const Card= ()=> {
     // <!-- Button trigger modal -->
     const [name, setName] = useState("");
+    const [clas, setClas] = useState("");
   
   return (
     
@@ -39,6 +40,11 @@ const Card= ()=> {
     <label for="name">Exam Name:</label>
     <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
   </div>
+  <div class="form-group">
+    <label for="class">Class:</label>
+    <input type="text" id="class" name="name" value={clas} onChange={(e) => setClas(e.target.value)} required/>
+  </div>
+  
   <div class="form-group">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name"  required/>
@@ -102,7 +108,7 @@ const Card= ()=> {
 
          <div style={{width:"100%",display:"flex",justifyContent: "space-between"}}>
          <div style={{paddingTop:"1rem"}}>
-            <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) => setName(e.name)}>Enroll</a>
+            <a href="#" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={(ee) =>{ setName(e.name);setClas(e.class)}}>Enroll</a>
             </div>
             <div >
             <a href={`whatsapp://send?text=Hi, I am interested about the exam [${e.name}]&phone=+919593610777`} ><span className={Style.icon}style={{fontSize:"2.5rem"}}><IoLogoWhatsapp/></span></a>
