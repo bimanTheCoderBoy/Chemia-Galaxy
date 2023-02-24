@@ -43,12 +43,12 @@ const Card= ()=> {
       <div class="modal-body">
       <form action={`https://formsubmit.co/${email}`} method="post" class="contact-form">
       <div class="form-group">
-    <label for="name">Exam Name:</label>
-    <input type="text" id="name" name="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+    <label for="ExamName">Exam Name:</label>
+    <input type="text" id="ExamName" name="ExamName" value={name} onChange={(e) => setName(e.target.value)} required/>
   </div>
   <div class="form-group">
     <label for="class">Class:</label>
-    <input type="text" id="class" name="name" value={clas} onChange={(e) => setClas(e.target.value)} required/>
+    <input type="text" id="class" name="class" value={clas} onChange={(e) => setClas(e.target.value)} required/>
   </div>
  
   <div class="form-group">
